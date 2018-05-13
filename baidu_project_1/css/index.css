@@ -1,0 +1,748 @@
+/* 头部 */
+header {
+    position: relative;
+    height: 990px;
+    background: url(../images/background1.png) no-repeat center center;
+
+}
+
+header section {
+    position: absolute;
+    top: 208px;
+    left: 419px;
+    width: 766px;
+
+}
+
+header section h1 {
+    font-size: 62px;
+    line-height: 50px;
+    color: #fff;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+header section p {
+    font-size: 20px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, .7);
+    text-align: center;
+}
+
+header .login-panel {
+    position: absolute;
+    top: 530px;
+    left: 315px;
+    width: 970px;
+    height: 250px;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    font-family: "ML";
+
+}
+
+header .login-panel dl {
+    margin-top: 61px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+header .login-panel dt {
+    font-size: 16px;
+    line-height: 13px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 19px;
+}
+
+header .login-panel dd {
+    font-size: 12px;
+    line-height: 10px;
+    color: rgba(255, 255, 255, .3);
+    letter-spacing: 1px;
+
+}
+
+header .login-panel input {
+    float: left;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 14px;
+    line-height: 50px;
+}
+
+header .login-panel .user-name {
+    width: 292px;
+    height: 50px;
+    padding-left: 22px;
+    margin-left: 100px;
+    margin-right: 30px;
+    color: #fff;
+}
+
+header .login-panel .user-password {
+    width: 292px;
+    height: 50px;
+    padding-left: 19px;
+    margin-right: 30px;
+    color: rgba(255, 255, 255, .3);
+}
+
+header .login-panel .login-up {
+    width: 125px;
+    height: 50px;
+    background-color: #fff;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #141414;
+    cursor: pointer;
+}
+
+/* /头部 */
+
+/* 内容区 */
+
+/* 内容区1 */
+.content-1 {
+    position: relative;
+    height: 710px;
+
+}
+
+.content-1 .title_1 {
+    position: absolute;
+    top: 89px;
+    left: 473px;
+    width: 657px;
+    height: 143px;
+    color: #141414;
+    text-align: center;
+
+}
+
+.content-1 .title_1 .small-title {
+    font-size: 14px;
+    line-height: 11px;
+    font-family: "ML";
+    letter-spacing: 2px;
+    margin-bottom: 34px;
+}
+
+.content-1 .title_1 .big-title {
+    font-size: 39px;
+    font-family: "ME";
+    line-height: 52px;
+
+}
+
+.mid-container {
+    position: relative;
+    width: 1027px;
+    margin: 0 auto;
+}
+
+.content-1 .des-panels {
+    top: 317px;
+    width: 1028px;
+
+}
+
+.float {
+    float: left;
+}
+
+.content-1 .des-panels h1 {
+    font-family: "ML";
+    font-size: 20px;
+    line-height: 20px;
+    color: #141414;
+    margin-bottom: 20px;
+}
+
+.content-1 .des-panels p {
+    font-family: "ME";
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(20, 20, 20, .7);
+}
+
+.content-1 .des-panels .panel-1 {
+    width: 417px;
+    height: 85px;
+    margin-left: 16px;
+    margin-right: 179px;
+    margin-bottom: 80px;
+    background: url("../images/Iphone Icon.png") no-repeat top left;
+}
+
+.content-1 .des-panels .panel-1 section {
+    margin-left: 60px;
+}
+
+.content-1 .des-panels .panel-2 {
+    width: 394px;
+    height: 84px;
+    margin-bottom: 82px;
+    background: url("../images/Check Icon.png") no-repeat top left;
+}
+
+.content-1 .des-panels .panel-2 section {
+    margin-left: 66px;
+}
+
+.content-1 .des-panels .panel-3 {
+    width: 424px;
+    height: 89px;
+    margin-right: 179px;
+    background: url("../images/Pencil Icon.png") no-repeat top left;
+}
+
+.content-1 .des-panels .panel-3 section {
+    margin-left: 76px;
+}
+
+.content-1 .des-panels .panel-4 {
+    width: 425px;
+    height: 130px;
+    background: url("../images/Settings Icon.png") no-repeat top left;
+}
+
+.content-1 .des-panels .panel-4 section {
+    margin-left: 74px;
+}
+
+/* /内容区1 */
+
+/* 内容区2 */
+.content-2 {
+    position: relative;
+    height: 800px;
+    background: url("../images/background2.png") no-repeat center center;
+}
+
+.content-2 section {
+    position: absolute;
+    top: 173px;
+    left: 316px;
+    width: 367px;
+}
+
+.content-2 section h1 {
+    font-size: 40px;
+    line-height: 52px;
+    color: #fff;
+    margin-bottom: 42px;
+}
+
+.content-2 section p {
+    font-size: 17px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, .7);
+}
+
+.content-2 .btns {
+    position: absolute;
+    top: 555px;
+    left: 316px;
+}
+
+.content-2 .button-left {
+    width: 240px;
+    height: 60px;
+    margin-right: 30px;
+    font-family: "ML";
+    font-size: 12px;
+    color: #141414;
+    line-height: 60px;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 2px;
+
+}
+
+.content-2 .button-right {
+    width: 235px;
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 2px;
+    font-family: "ML";
+    font-size: 12px;
+    color: #fff;
+    line-height: 60px;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+.content-2 .screen-border {
+    position: absolute;
+    right: 0;
+    top: 104px;
+    width: 643px;
+    height: 598px;
+    border: 1px solid #fff;
+    border-radius: 30px 0 0 30px;
+    background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    font-size: 0;
+}
+
+.content-2 .screen-border .circle {
+    position: absolute;
+    top: 50%;
+    width: 7px;
+    height: 7px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-top: -4.5px;
+    margin-left: 31px;
+}
+
+.content-2 .screen-border img {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+
+}
+
+/* /内容区2 */
+
+/* 内容区3 */
+.content-3 {
+    height: 579px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-3 .title_3 {
+    text-align: center;
+    margin-top: 99px;
+    margin-bottom: 85px;
+}
+
+.content-3 .title_3 h1 {
+    font-size: 42px;
+    color: #141414;
+}
+
+.content-3 .des-panels {
+    width: 954px;
+    height: 272px;
+    margin: 85px 23px 80px 54px;
+}
+
+.content-3 .des-panels section {
+    text-align: center;
+}
+
+.content-3 .des-panels section p {
+    font-size: 16px;
+    color: rgba(20, 20, 20, .7);
+    line-height: 26px;
+
+}
+
+.content-3 .left {
+    width: 253px;
+    margin-right: 86px;
+}
+
+.content-3 .left p,
+.content-3 .middle p,
+.content-3 .right p {
+    margin-top: 34px;
+}
+
+.content-3 .middle {
+    width: 265px;
+    margin-right: 84px;
+}
+
+.content-3 .right {
+    width: 266px;
+}
+
+/* /内容区3 */
+
+/* 内容区4 */
+.content-4 {
+    position: relative;
+    height: 1000px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-4 .tree-des1 {
+    width: 977px;
+    height: 350px;
+    margin: 114px 14px 80px 38px;
+}
+
+.content-4 .bird-des2 {
+    width: 975px;
+    height: 350px;
+    margin: 0px 19px 0px 37px;
+}
+
+.content-4 .tree-des1 .des1 {
+    width: 307px;
+    /*height: 238px;*/
+    margin: 66px 0px 25px 100px;
+}
+
+.content-4 .bird-des2 .des2 {
+    width: 322px;
+    /*height: 236px;*/
+    margin: 66px 79px 42px 0px;
+}
+
+.content-4 section h1 {
+    font-family: "ML";
+    font-size: 20px;
+    color: #141414;
+    line-height: 32px;
+
+}
+
+.content-4 section p {
+    font-family: "ME";
+    font-size: 16px;
+    color: rgba(20, 20, 20, .7);
+    line-height: 28px;
+
+}
+
+.content-4 .des2 p {
+    width: 307px;
+}
+
+.content-4 section.des1 h1 {
+    margin-bottom: 29px;
+}
+
+.content-4 section.des2 h1 {
+    margin-bottom: 24px;
+}
+
+/* /内容区4 */
+
+/* 内容区5 */
+.content-5 {
+    position: relative;
+    height: 1084px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-5 section {
+    position: absolute;
+    left: 50%;
+    margin-left: -348px;
+    margin-top: 93px;
+    width: 697px;
+    text-align: center;
+}
+
+.content-5 section h1 {
+    font-size: 42px;
+    color: #141414;
+    margin-bottom: 30px;
+}
+
+.content-5 section p {
+    font-size: 18px;
+    color: rgba(20, 20, 20, .7);
+    line-height: 28px;
+
+}
+
+.content-5 .fonters {
+    position: absolute;
+    top: 315px;
+    left: 273px;
+    width: 970px;
+    font-size: 0;
+
+}
+
+.content-5 .fonters .fonter1_hover {
+    display: inline-block;
+    position: relative;
+    width: 470px;
+    height: 340px;
+}
+
+.content-5 .fonters .fonter1_hover .hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 470px;
+    height: 340px;
+    background-color: rgba(20, 20, 20, .65);
+    border-radius: 2px;
+    text-align: center;
+
+}
+
+.content-5 .fonters .hover h1 {
+    font: 20px/15px "ML";
+    color: #fff;
+    margin: 109px 0 18px;
+
+}
+
+.content-5 .fonters .hover p {
+    font: 12px/9px "ML";
+    color: rgba(255, 255, 255, .4);
+    margin-bottom: 39px;
+
+}
+
+.content-5 .fonters .hover .circles {
+    width: 264px;
+    height: 56px;
+    margin-left: 129px;
+}
+
+.content-5 .fonters .hover .circle {
+    width: 49px;
+    height: 52px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 50%;
+    margin-right: 30px;
+    line-height: 52px;
+}
+
+.content-5 .fonters .hover img {
+    vertical-align: middle;
+}
+
+.content-5 .fonters .fonter1_hover:hover .hover {
+    display: block;
+}
+
+.content-5 .fonters .fonter1_hover {
+    margin: 0px 30px 30px 0px;
+}
+
+.content-5 .fonters .fonter2 {
+    margin: 0px 0px 30px 0px;
+}
+
+.content-5 .fonters .fonter3 {
+    margin: 0px 30px 0px 0px;
+}
+
+.content-5 .fonters .fonter4 {
+    margin: 0px 0px 0px 0px;
+}
+
+/* /内容区5 */
+
+/* 内容区6 */
+.content-6 {
+    position: relative;
+    height: 700px;
+}
+
+.content-6 .login-panel {
+    position: absolute;
+    top: 70px;
+    left: 315px;
+    width: 468px;
+    height: 558px;
+    border: 1px solid rgba(20, 20, 20, .1);
+    border-radius: 10px;
+    font-size: 0;
+}
+
+.content-6 .login-panel h1 {
+    font-size: 16px;
+    color: #141414;
+    line-height: 12px;
+    letter-spacing: 2px;
+    margin: 51px 0 47px 0;
+    text-align: center;
+}
+
+.content-6 .login-panel .e-mail, .subject {
+    width: 348px;
+    height: 48px;
+    border-radius: 2px;
+    border: 1px solid rgba(38, 35, 33, .2);
+    margin: 0 0 30px 51px;
+    padding-left: 20px;
+    font-family: "ML";
+    font-size: 14px;
+    color: rgba(20, 20, 20, .5);
+}
+
+.content-6 .login-panel textarea {
+    width: 346px;
+    height: 122px;
+    border-radius: 2px;
+    border: 1px solid rgba(38, 35, 33, 0.2);
+    margin: 0 0 30px 51px;
+    padding: 20px 0 0 22px;
+    font-family: "ML";
+    font-size: 14px;
+    color: rgba(20, 20, 20, .5);
+
+}
+
+.content-6 .login-panel .send {
+    width: 370px;
+    height: 50px;
+    background-color: #141414;
+    border-radius: 2px;
+    margin-left: 51px;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.content-6 .contact {
+    position: absolute;
+    top: 158px;
+    right: 332px;
+    width: 354px;
+    height: 356px;
+}
+
+.content-6 .contact section {
+    margin-bottom: 65px;
+}
+
+.content-6 .contact section h1 {
+    font: 42px/30px "ME";
+    color: #141414;
+    margin-bottom: 34px;
+}
+
+.content-6 .contact section p {
+    font: 16px/26px "ME";
+    color: rgba(20, 20, 20, .7);
+}
+
+.content-6 .contact address {
+    width: 257px;
+
+}
+
+.content-6 .contact address div {
+    font-family: "ML";
+    font-size: 16px;
+    line-height: 26px;
+    color: #141414;
+}
+
+.content-6 .contact .location {
+    width: 219px;
+    padding-left: 38px;
+    margin-bottom: 37px;
+    background: url("../images/Map Icon.png") no-repeat left 8px;
+}
+
+.content-6 .contact .phone {
+    height: 30px;
+    padding-left: 38px;
+    margin-bottom: 37px;
+    background: url("../images/Phone Icon.png") no-repeat left bottom;
+}
+
+.content-6 .contact .mail {
+    padding-left: 36px;
+    background: url("../images/Mail Icon.png") no-repeat left center;
+}
+
+/* /内容区6 */
+
+/* /内容区 */
+
+/* 尾部 */
+footer {
+    position: relative;
+    height: 410px;
+    background-color: #141414;
+}
+
+footer .des {
+    position: absolute;
+    top: 88px;
+    left: 215px;
+    width: 1165px;
+}
+
+footer .des dt {
+    font: 14px/11px "ML";
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 26px;
+}
+
+footer .des dd {
+    font: 16px/46px "ME";
+    color: rgba(255, 255, 255, .3);
+}
+
+footer .des .des1 {
+    margin-right: 172px;
+}
+
+footer .des .des2 {
+    margin-right: 151px;
+}
+
+footer .des .des3 {
+    margin-right: 216px;
+}
+
+footer .des .des4 {
+    width: 261px;
+
+}
+
+footer .des .des4 dt {
+    margin-bottom: 22px;
+}
+
+footer .des .des4 dd {
+    font: 18px/28px "ME";
+    color: rgba(255, 255, 255, .4);
+}
+
+footer .icons {
+    position: absolute;
+    right: 264px;
+    bottom: 179px;
+    width: 223px;
+    height: 18px;
+    font-size: 0;
+    opacity: .3;
+}
+
+footer .icons .icon1 {
+    margin-right: 28px;
+}
+
+footer .icons .icon2 {
+    margin-right: 24px;
+}
+
+footer .icons .icon3 {
+    margin-right: 24px;
+}
+
+footer .icons .icon4 {
+    margin-right: 30px;
+}
+
+footer .icons .icon5 {
+    margin-right: 26px;
+}
+
+/* /尾部 */
