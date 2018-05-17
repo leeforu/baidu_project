@@ -1,0 +1,692 @@
+/*边栏*/
+
+aside{
+    position: relative;
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+/*左侧*/
+
+aside .left-aside{
+    width: 100px;
+    height: 100%;
+    background-color: #1d2531;
+
+}
+
+aside .left-aside .fix-icon{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+}
+
+aside .left-aside .fix-icon .icon{
+    position: relative;
+    left: 50%;
+    margin-left: -30px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    font-size: 0;
+}
+
+aside .left-aside .fix-icon .icon1,
+aside .left-aside .fix-icon .icon2,
+aside .left-aside .fix-icon .icon3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+aside .left-aside .fix-icon .icon1{
+    margin-top: -12px;
+    margin-left: -13px;
+}
+
+aside .left-aside .fix-icon .icon2{
+    margin-top: -18px;
+    margin-left: -12px;
+}
+
+aside .left-aside .fix-icon .icon3{
+    margin-top: -12px;
+    margin-left: -16px;
+}
+
+aside .left-aside .add-icon{
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: solid 3px #2d3848;
+    text-align: center;
+    line-height: 60px;
+    color: #2d3848;
+    font-size: 36px;
+    font-weight: bold;
+
+}
+
+aside .left-aside .grid{
+    position: fixed;
+    bottom: 20px;
+    left: 26px;
+}
+
+aside .left-aside .setting{
+    position: fixed;
+    bottom: 20px;
+    left: 58px;
+}
+
+
+/*/左侧*/
+
+
+/*右侧*/
+
+aside .right-aside{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 250px;
+    height: 100%;
+    background-color: #222c3c;
+}
+
+aside .right-aside nav{
+    margin-left: 29px;
+    padding-bottom: 29px;
+    width: 191px;
+    border-bottom: 1px solid #2a3547;
+}
+
+aside .right-aside .menu{
+    height: 226px;
+    margin-top: 30px;
+}
+
+aside .right-aside .product{
+    height: 195px;
+    margin-top: 23px;
+}
+
+aside .right-aside .dashboard{
+    height: 203px;
+    margin-top: 22px;
+    border: none;
+}
+
+aside .right-aside .subnav-title{
+    font: 12px/16px "PNS";
+    color: #5b6779;
+    margin-bottom: 27px;
+    background: url("../images/Settings.png") no-repeat right top;
+}
+
+aside .right-aside li{
+    font: 14px/16px "PNS";
+    color: #b7c0cd;
+}
+
+aside .right-aside .menu li{
+    margin-bottom: 25px;
+}
+
+aside .right-aside .product li{
+    margin-bottom: 27px;
+}
+
+aside .right-aside .dashboard li{
+    margin-bottom: 23px;
+}
+
+aside .right-aside .flex-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+aside .right-aside .num-icon{
+    width: 32px;
+    height: 24px;
+    margin-top: -6px;
+    font: 14px/24px "";
+    color: #fff;
+    text-align: center;
+    background: url("../images/Base5.png") no-repeat center center;
+}
+
+aside .right-aside .warning-icon{
+    width: 24px;
+    height: 24px;
+    margin-top: -7px;
+    font: 12px/24px "";
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    background: url("../images/Base3.png") no-repeat center center;
+    background-size: 24px 24px;
+}
+
+aside .right-aside li.gray{
+    color: #eee;
+}
+
+aside .right-aside .product li{
+    padding-left: 30px;
+}
+
+aside .right-aside .product .bg-icon1{
+    background: url("../images/Book of Wisdom.png") no-repeat left center;
+}
+
+aside .right-aside .product .bg-icon2{
+    background: url("../images/Video Camera.png") no-repeat left center;
+}
+
+aside .right-aside .product .bg-icon3{
+    background: url("../images/Painting.png") no-repeat left center;
+}
+
+aside .right-aside .product .bg-icon4{
+    background: url("../images/Chart.png") no-repeat left center;
+}
+
+aside .right-aside .process-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    width: 190px;
+    height: 31px;
+    bottom: 23px;
+    left: 130px;
+    font: 14px/14px "PNS";
+    color: #fff;
+    background-image: url("../images/Base4.png"),url("../images/Fill.png");
+    background-position: center bottom,left bottom;
+    background-repeat: no-repeat,no-repeat;
+}
+
+/*/右侧*/
+/*/边栏*/
+
+
+
+
+/*内容区*/
+
+.main{
+
+    width: 100%;
+}
+/*头部*/
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding-left: 30px;
+    padding-right: 31px;
+    border-bottom: 1px solid #e6e9ec;
+}
+
+header>p{
+    font: 24px/80px "PNR";
+    color: #354052;
+}
+
+header .user-msg{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 204px;
+    height: 58px;
+    margin-top: 11px;
+}
+
+header .user-msg p span{
+    font: 16px/11px "PNS";
+    color: #2399f1;
+    display: block;
+    margin-bottom: 10px;
+}
+
+header .user-msg p{
+    font: 14px/10px "PNS";
+    color: #b5b5b5;
+    margin-top: 13px;
+    margin-right: 30px;
+}
+
+header .user-msg .user-img{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    margin: 3px 16px 0 3px;
+}
+
+header .user-msg .user-img img.status{
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+
+}
+
+header .user-msg .arrow-down{
+    width: 11px;
+    height: 10px;
+    margin-top: 22px;
+    transform: rotate(90deg);
+    font: 14px/10px "PNR";
+    color: #bfc7d8;
+}
+
+/*/头部*/
+
+/*左侧内容区*/
+
+.left-content{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border: 1px solid #e6e9ec;
+    border-top: none;
+    height: auto;
+}
+
+/*搜索条*/
+.left-content .search-bar{
+    position: relative;
+    width: 400px;
+    height: 70px;
+    border-right: 1px solid #e6e9ec;
+    border-bottom: 1px solid #e6e9ec;
+    text-align: center;
+}
+
+.left-content .search-bar .search-input{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -18px;
+    margin-left: -170px;
+    width: 338px;
+    height: 34px;
+    border: 1px solid #e6e9ec;
+    border-radius: 4px;
+    background: url("../images/Search icon.png") no-repeat 310px 10px;
+}
+
+.left-content .search-bar .search-input input{
+    position: absolute;
+    left: 15px;
+    width: 250px;
+    height: 34px;
+}
+
+/*/搜索条*/
+
+.left-content .msg-status{
+    /*overflow: hidden;*/
+}
+
+.left-content .msg-status .same{
+    height: 128px;
+    width: 348px;
+    padding: 16px 24px 0 30px;
+    border-bottom: 1px solid #e6e9ec;
+}
+
+.left-content .msg-status .same .user-head-msg_time{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-content .msg-status .same .user-head-msg{
+    display: flex;
+    justify-content: flex-start;
+    height: 48px;
+    margin-bottom: 14px;
+}
+
+.left-content .msg-status .same .head-img{
+    margin-right: 20px;
+}
+
+.left-content .msg-status .same .username_app{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-content .msg-status .same .username{
+    margin: 10px 0 10px;
+    font: 16px/11px "PNS";
+    color: #585d68;
+}
+
+.left-content .msg-status .same .msg-app{
+    font: 14px/10px "PNS";
+    color: #b5b5b5;
+}
+
+.left-content .msg-status .same .msg-time{
+    font: 14px/10px "PNS";
+    color: #7f8fa4;
+    margin-top: 12px;
+}
+
+.left-content .msg-status .same .user-leave-msg{
+    display: flex;
+    justify-content: space-between;
+    font: 14px/19px "PNR";
+    color: #585d68;
+}
+
+
+
+.left-content .msg-status .status-1{
+    border-left: 3px solid #2399f1;
+    padding-left: 27px;
+}
+
+.left-content .msg-status .status-1 .user-leave-msg{
+    padding-right: 43px;
+}
+
+.left-content .msg-status .status-1 .tip-num{
+    width: 46px;
+    height: 24px;
+    margin-right: -43px;
+    margin-top: 3px;
+    background: url("../images/Base1.png") no-repeat center center;
+    border-radius: 50%;
+    font: 14px/10px "PNS";
+    color: #fff;
+    line-height: 24px;
+    text-align: center;
+}
+
+.left-content .msg-status .status-1 .username{
+    padding-left: 16px;
+    background: url("../images/Base1.png") no-repeat left center;
+    background-size: 8px 8px;
+    font: 16px/14px "PNS";
+    color: #2399f1;
+}
+
+
+
+/*/左侧内容区*/
+
+.content{
+    display: flex;
+}
+
+/*右侧内容区*/
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+
+
+/*操作条*/
+.right-content .operate-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    border-bottom: 1px solid #e6e9ec;
+    padding: 0 20px 0 29px;
+}
+
+.right-content .operate-bar .operate-bar-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-content .operate-bar .operate-bar-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.right-content .operate-bar .operate-bar-left .dialog-people{
+    display: flex;
+    align-items: center;
+    font: 18px/15px "PNS";
+    color: #585d68;
+}
+
+.right-content .operate-bar .operate-bar-left .green-circle{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #1bb934;
+    margin-left: 9px;
+}
+
+.right-content .operate-bar .operate-bar-right .operate-icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 23px;
+    width: 109px;
+    height: 32px;
+    background-image: linear-gradient(0deg, #f1f3f7 0%, #ffffff 100%),
+    linear-gradient(
+            #ffffff,
+            #ffffff);
+    background-blend-mode: normal,
+    normal;
+    border-radius: 4px;
+    border: solid 1px #ced0da;
+
+}
+
+.right-content .operate-bar .divide-line{
+    width: 1px;
+    height: 30px;
+    background-color: #ced0da;
+
+}
+
+.right-content .operate-bar .operate-bar-right{
+    width: 284px;
+    height: 32px;
+
+}
+
+.right-content .operate-bar .operate-bar-right .arrows{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 73px;
+    height: 32px;
+    background-image: linear-gradient(0deg,
+    #f1f3f7 0%,
+    #ffffff 100%),
+    linear-gradient(
+            #ffffff,
+            #ffffff);
+    background-blend-mode: normal,
+    normal;
+    border-radius: 4px;
+    border: 1px solid #ced0da;
+
+}
+
+.right-content .operate-bar .operate-bar-right p{
+    font: 14px/10px "PNS";
+    color: #56688a;
+}
+
+
+/*/操作条*/
+
+/*对话区*/
+.right-content .dialog-1,
+               .dialog-2,
+               .dialog-3,
+               .dialog-4,
+               .dialog-5{
+    display: flex;
+    padding: 25px 57px 0 30px;
+
+}
+
+.right-content .dialog-1 img,
+.right-content .dialog-2 img,
+.right-content .dialog-3 img,
+.right-content .dialog-4 img,
+.right-content .dialog-5 img{
+    height: 46px;
+    margin-right: 20px;
+}
+
+.right-content .dialog-1 .user-name,
+.right-content .dialog-2 .user-name,
+.right-content .dialog-3 .user-name,
+.right-content .dialog-4 .user-name,
+.right-content .dialog-5 .user-name{
+    font: 16px/14px "PNS";
+    color: #585d68;
+    margin-bottom: 10px;
+}
+
+.right-content .dialog-1 .user-name span,
+.right-content .dialog-2 .user-name span,
+.right-content .dialog-3 .user-name span,
+.right-content .dialog-4 .user-name span,
+.right-content .dialog-5 .user-name span{
+    font: 14px/10px "PNS";
+    color: #7f8fa4;
+    margin-left: 8px;
+}
+
+
+.right-content .dialog-1 .user-word,
+.right-content .dialog-2 .user-word,
+.right-content .dialog-3 .user-word,
+.right-content .dialog-4 .user-word,
+.right-content .dialog-5 .user-word{
+    font: 14px/19px "PNR";
+    color: #585d68;
+}
+
+.right-content .dialog-4 .user-word{
+    margin-bottom: 12px;
+}
+
+.right-content .dialog-4 .views{
+    display: flex;
+    height: 100px;
+    margin-bottom: 12px;
+}
+
+.right-content .dialog-4 .views .view-1{
+    margin-right: 13px;
+}
+
+.right-content .dialog-4 .views img{
+    width: 156px;
+    height: 100px;
+}
+
+.right-content .horizon-tuesday{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 27px;
+    margin-top: 15px;
+    font: 14px/13px "PNR";
+    color: #7f8fa4;
+}
+
+.right-content .horizon-tuesday .line{
+    width: 45%;
+    height: 1px;
+    background-color: #d9dde3;
+}
+
+.right-content .horizon-new-messages{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 27px;
+    font: 14px/13px "PNR";
+    color: #2399f1;
+}
+
+.right-content .horizon-new-messages .line{
+    width: 43%;
+    height: 1px;
+    background-color: #a7d6f9;
+}
+
+.right-content .send-message{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 54px;
+    margin: 0 auto;
+    margin-top: 28px;
+    border-radius: 4px;
+    border: 1px solid #dfe3e9;
+}
+
+.right-content .send-message .send-btn{
+
+    width: 54px;
+    height: 54px;
+    background-image: linear-gradient(0deg,
+    #f1f3f7 0%,
+    #ffffff 100%),
+    linear-gradient(
+            #ffffff,
+            #ffffff);
+    background-blend-mode: normal,
+    normal;
+    border-right: 1px solid #dfe3e9;
+    font: 25px/25px "";
+    color: #9fa9ba;
+    text-align: center;
+    line-height: 54px;
+}
+
+.right-content .send-message input{
+    font-size: 14px;
+    font-family: "PNR";
+    color: #585d68;
+    padding-left: 19px;
+    width: 100%;
+}
+
+
+/*/对话区*/
+
+
+
+
+/*/右侧内容区*/
+
+
+
+
+
+/*/内容区*/

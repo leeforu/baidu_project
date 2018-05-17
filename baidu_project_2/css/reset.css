@@ -1,0 +1,69 @@
+
+/*@font-face{*/
+    /*font-family: "ME";*/
+    /*src: url("../fonts/Montserrat-ExtraLight.otf");*/
+/*}*/
+
+/*@font-face{*/
+    /*font-family: "ML";*/
+    /*src: url("../fonts/Montserrat Light.ttf");*/
+/*}*/
+
+@font-face{
+    font-family: "PNR";
+    src: url("../fonts/ProximaNova-Reg.otf");
+}
+
+@font-face{
+    font-family: "PNS";
+    src: url("../fonts/ProximaNova-Sbold.otf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    /*font-family: "ME","ML";*/
+    font-family: "PNR","PNS";
+    font-style: normal;
+    font-weight: normal;
+    vertical-align: baseline;
+}
+
+html,body{
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+}
+
+body{
+    display: flex;
+}
+
+ol,ul,dl,li{
+    list-style: none;
+}
+
+img,input,button{
+    vertical-align: top;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clearfix{
+    overflow: hidden;
+    zoom: 1;
+}
+
+.clearfix:after{
+    display: block;
+    height: 0;
+    content: "";
+    clear: both;
+    visibility: hidden;
+}
