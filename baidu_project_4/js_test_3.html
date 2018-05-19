@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        table,tr,td{
+            border: 1px solid #000;
+            border-collapse: collapse;
+            color: #00f;
+        }
+    </style>
+</head>
+<body>
+    <table id="tab">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <script>
+        // for (var i=1;i<101;i++){
+        //
+        //     var str_i = i.toString();
+        //     if (i%3 === 0 || str_i.indexOf("3")>-1){
+        //         console.log("PA");
+        //     }else {
+        //         console.log(i);
+        //     }
+        // }
+
+        var table = document.getElementById("tab");
+        var trs = table.getElementsByTagName("tr");
+
+        for (var n=0;n<trs.length;n++){
+            var tds = trs[n].getElementsByTagName("td");
+            for (var m=0;m<n+1;m++){
+                var t = (n+1)*(m+1);
+                tds[m].innerHTML = (n+1) +"*"+ (m+1) +"=" + t;
+            }
+        }
+
+        for (var n=1;n<10;n++){
+
+            for (var m=1;m<n+1;m++){
+                var t = n*m;
+                console.log(n+"*"+m+"="+t);
+            }
+
+        }
+    </script>
+</body>
+</html>

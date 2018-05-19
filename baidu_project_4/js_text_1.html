@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="first_num" value="0" />
+    <input type="text" id="second_num" value="0" />
+    <button id="add_btn">加</button>
+    <button id="minus_btn">减</button>
+    <button id="times_btn">乘</button>
+    <button id="divide_btn">除</button>
+
+    <p id="result">结果为</p>
+
+
+    <script>
+        var first_num = document.getElementById("first_num");
+        var second_num = document.getElementById("second_num");
+        var add_btn = document.getElementById("add_btn");
+        var minus_btn = document.getElementById("minus_btn");
+        var times_btn = document.getElementById("times_btn");
+        var divide_btn = document.getElementById("divide_btn");
+        var result = document.getElementById("result");
+        var nan_tip = "输入了除数字外的字符,请输入纯数字";
+        var divide_0 = "除法运算时除数不能为0";
+
+        var arith = {
+            add: function () {
+                return parseInt(first_num.value) + parseInt(second_num.value);
+            },
+            minus: function () {
+                return parseInt(first_num.value) - parseInt(second_num.value);
+            },
+            times: function () {
+                return parseInt(first_num.value) * parseInt(second_num.value);
+            },
+            divide: function () {
+                return parseInt(first_num.value) / parseInt(second_num.value);
+            }
+        };
+
+            add_btn.onclick = function () {
+                if (isNaN(arith.add()) === true){
+                    result.innerHTML = nan_tip;
+                }else {
+                    result.innerHTML = arith.add();
+                }
+
+            };
+
+            minus_btn.onclick = function () {
+                if (isNaN(arith.minus()) === true){
+                    result.innerHTML = nan_tip;
+                }else {
+                    result.innerHTML = arith.minus();
+                }
+            };
+
+            times_btn.onclick = function () {
+                if (isNaN(arith.times()) === true){
+                    result.innerHTML = nan_tip;
+                }else {
+                    result.innerHTML = arith.times();
+                }
+            };
+
+            divide_btn.onclick = function () {
+                if (isNaN(arith.divide()) === true){
+                    result.innerHTML = nan_tip;
+                }else if (parseInt(second_num.value) === 0){
+                    result.innerHTML = divide_0;
+                }else {
+                    result.innerHTML = arith.divide();
+                }
+
+            };
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
