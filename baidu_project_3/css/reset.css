@@ -1,0 +1,39 @@
+/*
+* @Author: lxy
+* @Date:   2018-05-05 14:55:39
+* @Last Modified by:   lxy
+* @Last Modified time: 2018-05-05 15:02:20
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Microsoft YaHei";
+    
+}
+
+ol,ul,dl,li{
+    list-style: none;
+}
+
+img{
+    font-size: 0;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clearfix{
+    overflow: hidden;
+    zoom: 1;
+}
+
+.clearfix:after{
+    display: block;
+    height: 0;
+    content: "";
+    clear: both;
+    visibility: hidden;
+}

@@ -1,0 +1,111 @@
+/*
+* @Author: lxy
+* @Date:   2018-05-03 21:31:50
+* @Last Modified by:   lxy
+* @Last Modified time: 2018-05-03 22:22:44
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑";
+}
+
+.resume{
+    width: 1000px;
+    border: 1px solid #eee;
+    margin: 0 auto;
+}
+
+.title{
+    height: 80px;
+    line-height: 80px;
+    background-color: #666;
+}
+
+.title h1{
+    margin-left: 20px;
+    color: #fff;
+}
+
+.des,h2{
+    float: left;
+}
+
+h1,h2,h3,span{
+    font-weight: bold;
+}
+
+h1,h2{
+    line-height: 2.5em;
+}
+
+h2{
+    width: 120px;
+    text-align: center;
+    line-height: 120px;
+    background-color: #ccc;
+}
+
+a:link{
+    color: #00f;
+}
+
+
+.basicInfo p{
+    float: left;
+    margin-right: 20px;
+    
+}
+
+.contact{
+    clear:both;
+}
+
+.contact p{
+    float: left;
+    margin-right: 20px;
+}
+
+.contact .more-msg{
+    cursor: pointer;
+}
+
+.contact .more-msg .hidden-msg{
+    display: none;
+}
+
+.contact .more-msg .appear-msg{
+    display: block;
+    color: #f00;
+}
+
+
+.skill,.education,.project{
+    clear: both;
+}
+
+.basicInfo,.contact,.skill,.education,.project{
+    height: 120px;
+    border-bottom: 1px solid #eee;
+}
+
+.des{
+    margin-left: 20px;
+    width: 600px;
+}
+
+.skill p,h3{
+    display: inline;
+}
+
+.education p,h3{
+    display: inline;
+}
+
+.project p,h3{
+    display: inline;
+}
+
+
+

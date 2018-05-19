@@ -1,0 +1,73 @@
+/*
+* @Author: lxy
+* @Date:   2018-05-03 21:16:29
+* @Last Modified by:   lxy
+* @Last Modified time: 2018-05-03 21:30:31
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑";
+}
+
+.title,.content{
+    float: left;
+    height: 700px;
+}
+
+.title{
+    width: 200px;
+    text-align: center;
+    margin-right: 20px;
+    background-color: #00f;
+}
+
+.title h1{
+    margin-top: 1em;
+    color: #fff;
+}
+
+h1,h2,h3,span{
+    font-weight: bold;
+}
+
+h1,h2{
+    line-height: 2.5em;
+}
+
+a:link{
+    color: #00f;
+}
+
+
+.basicInfo p{
+    float: left;
+    margin-right: 20px;
+    
+}
+
+.contact{
+    clear:both;
+}
+
+.contact p{
+    float: left;
+    margin-right: 20px;
+}
+
+.skill{
+    clear: both;
+}
+
+.skill .techSkill{
+    margin-bottom: 20px;
+}
+
+.education .college{
+    margin-bottom: 20px;
+}
+
+.project .project1{
+    margin-bottom: 20px;
+}
