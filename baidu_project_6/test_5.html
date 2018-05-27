@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .smile{
+            width: 480px;
+            height: 480px;
+            border: 1px solid #000;
+            background-image: url("erik_ce204002.jpg");
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="smile" style="background-position: 0px 0px;">
+
+    </div>
+
+    <script>
+        var smile = document.querySelector(".smile");
+
+        function animationSmile() {
+            var pos = smile.style.backgroundPosition;
+            var posY = parseInt(pos.slice(4));
+            smile.style.backgroundPosition = "0px " + (-480+posY) + "px";
+            var  Smile = setTimeout(animationSmile,200);
+            if (smile.style.backgroundPosition === "0px -7680px"){
+                // clearTimeout(Smile);
+                smile.style.backgroundPosition = "0px 0px";
+            }
+        }
+
+        animationSmile();
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>IFE ECMAScript</title>
+</head>
+<body>
+    <input id="name" type="text">
+    <button id="submit-btn">Submit</button>
+<script>
+    var submit_btn = document.getElementById("submit-btn");
+    var txt_name = document.getElementById("name");
+
+    submit_btn.onclick = function () {
+        console.log(txt_name.value);
+    };
+
+    txt_name.addEventListener("keyup",function (event) {
+        var x = event.which || event.keyCode;
+        if (x === 13){
+            submit_btn.onclick();
+        }});
+
+    txt_name.addEventListener("keyup",function (event) {
+        var x = event.which || event.keyCode;
+        if (x === 27){
+            txt_name.value = "";
+        }});
+
+
+
+
+</script>
+</body>
+</html>
+</body>
+</html>
