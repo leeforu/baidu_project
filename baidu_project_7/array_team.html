@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="queue-input">
+    <p id="queue-cont">队列内容:apple->pear</p>
+    <button id="in-btn">入队</button>
+    <button id="out-btn">出队</button>
+    <button id="font-btn">打印队头元素内容</button>
+    <button id="empty-btn">判断队列是否为空</button>
+
+
+    <script>
+        var queue = ["apple","pear"];
+        var queue_input = document.getElementById("queue-input");
+        var queue_cont = document.getElementById("queue-cont");
+        var in_btn = document.getElementById("in-btn");
+        var out_btn = document.getElementById("out-btn");
+        var font_btn = document.getElementById("font-btn");
+        var empty_btn = document.getElementById("empty-btn");
+
+        function teamRight() {
+            in_btn.onclick = function () {
+                queue.unshift(queue_input.value);
+                queue_cont.innerHTML = queue.join("->");
+            };
+
+            out_btn.onclick = function () {
+                queue.pop();
+                queue_cont.innerHTML = queue.join("->");
+            };
+
+            font_btn.onclick = function () {
+                queue_cont.innerHTML = queue[queue.length-1];
+            };
+
+            empty_btn.onclick = function () {
+                if (queue.length === 0){
+                    queue_cont.innerHTML = "空队列";
+                }else {
+                    queue_cont.innerHTML = "非空队列";
+                }
+            };
+        }
+
+        function teamLeft() {
+            in_btn.onclick = function () {
+                queue.push(queue_input.value);
+                queue_cont.innerHTML = queue.join(" <- ");
+            };
+
+            out_btn.onclick = function () {
+                queue.shift();
+                queue_cont.innerHTML = queue.join(" <- ");
+            };
+
+            font_btn.onclick = function () {
+                queue_cont.innerHTML = queue[0];
+            };
+
+            empty_btn.onclick = function () {
+                if (queue.length === 0){
+                    queue_cont.innerHTML = "空队列";
+                }else {
+                    queue_cont.innerHTML = "非空队列";
+                }
+            };
+        }
+
+        teamLeft();
+
+
+
+    </script>
+</body>
+</html>

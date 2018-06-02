@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="stack-input">
+    <p id="stack-cont">栈内容:apple->pear</p>
+    <button id="push-btn">进栈</button>
+    <button id="pop-btn">退栈</button>
+    <button id="font-btn">打印栈顶元素内容</button>
+    <button id="empty-btn">判断栈是否为空</button>
+
+    <script>
+        var stack = ["apple","pear"];
+        var stack_input = document.getElementById("stack-input");
+        var stack_cont = document.getElementById("stack-cont");
+        var push_btn = document.getElementById("push-btn");
+        var pop_btn = document.getElementById("pop-btn");
+        var font_btn = document.getElementById("font-btn");
+        var empty_btn = document.getElementById("empty-btn");
+        
+        
+        function stackRight() {
+            push_btn.onclick = function () {
+                stack.push(stack_input.value);
+                stack_cont.innerHTML = stack.join(" -> ");
+            };
+
+            pop_btn.onclick = function () {
+                stack.pop();
+                stack_cont.innerHTML = stack.join(" -> ");
+            };
+
+            font_btn.onclick = function () {
+                stack_cont.innerHTML = stack[stack.length-1];
+            };
+
+            empty_btn.onclick = function () {
+                if (stack.length === 0){
+                    stack_cont.innerHTML = "空栈";
+                }else {
+                    stack_cont.innerHTML = "非空栈";
+                }
+            };
+        }
+
+        // stackRight();
+
+        function stackLeft() {
+            push_btn.onclick = function () {
+                stack.unshift(stack_input.value);
+                stack_cont.innerHTML = stack.join(" <- ");
+            };
+
+            pop_btn.onclick = function () {
+                stack.shift();
+                stack_cont.innerHTML = stack.join(" <- ");
+            };
+
+            font_btn.onclick = function () {
+                stack_cont.innerHTML = stack[0];
+            };
+
+            empty_btn.onclick = function () {
+                if (stack.length === 0){
+                    stack_cont.innerHTML = "空栈";
+                }else {
+                    stack_cont.innerHTML = "非空栈";
+                }
+            };
+        }
+
+        stackLeft();
+    </script>
+
+
+
+</body>
+</html>
