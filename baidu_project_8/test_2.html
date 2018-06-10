@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function displayFormatTime() {
+        var currentTime = new Date();
+        var year = currentTime.getFullYear();
+        var month = currentTime.getMonth()+1;
+        var day = currentTime.getDate();
+        var hour = currentTime.getHours();
+        var minute = currentTime.getMinutes();
+        var second = currentTime.getSeconds();
+
+        var formatTime1 = year + "年" + _complete(month) + "月" + _complete(day) + "日  "
+        + "星期" + weekFormat1(currentTime) + "  " + _complete(hour) + ":" + _complete(minute) + ":" + _complete(second);
+
+        var formatTime2 = year + "-" + _complete(month) + "-" + _complete(day) + "  "
+            + weekFormat2(currentTime) + "  " + _complete(hour) + ":" + _complete(minute) + ":" + _complete(second)
+        + "  " + amOrPm(currentTime);
+
+        document.body.innerHTML = formatTime1 + "<br>" + formatTime2;
+        setTimeout(displayFormatTime,1000);
+    }
+
+    displayFormatTime();
+
+
+
+    function _complete(n) {
+        return n>9 ? n : "0" + n;
+    }
+
+    function weekFormat1(ct) {
+        var week = ct.getDay();
+        switch (week){
+            case 0:return "日";
+            case 1:return "一";
+            case 2:return "二";
+            case 3:return "三";
+            case 4:return "四";
+            case 5:return "五";
+            case 6:return "六";
+        }
+    }
+
+    function weekFormat2(ct) {
+        var week = ct.getDay();
+        switch (week){
+            case 0:return "Sunday";
+            case 1:return "Monday";
+            case 2:return "Tuesday";
+            case 3:return "Wednesday";
+            case 4:return "Thursday";
+            case 5:return "Friday";
+            case 6:return "Saturday";
+        }
+    }
+    
+    function amOrPm(ct) {
+        var yd = new Date(ct.getFullYear(),ct.getMonth()-1,ct.getDate()-1);
+        var ydMs = yd.getTime();
+        var time = ct.getTime() - ydMs;
+        var noonMs = 12*60*60*1000;
+        if (time <= noonMs){
+            return "AM";
+        }else {
+            return "PM";
+        }
+    }
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
